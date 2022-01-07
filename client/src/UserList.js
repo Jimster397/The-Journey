@@ -2,8 +2,7 @@ import {useState} from "react";
 import EditForm from "./EditForm";
 
 function UserList({appuser, user, setUser}){
-    console.log(user.first_name)
-    console.log(appuser.username)
+
     const [cat, setCat]= useState(false)
     function handleClick(){
         setCat(true)

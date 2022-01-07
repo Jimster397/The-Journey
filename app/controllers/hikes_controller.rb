@@ -1,7 +1,7 @@
 class HikesController < ApplicationController
     def index
         hikes = Hike.all
-        render json: hikes
+        render json: hikes, include: [:reviews => {include: [:user]}] 
     end
  
     def show

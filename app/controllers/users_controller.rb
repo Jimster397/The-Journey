@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :is_authenticated, only: [:create, :show]
+    skip_before_action :is_authenticated, only: [:create]
     rescue_from ActiveRecord::RecordInvalid, with: :render_invalid
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
      
@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     end
      
     def show
-        user = User.find(params[:id])
+        user = User.find(session[:user_id])
         render json: user
     end
      

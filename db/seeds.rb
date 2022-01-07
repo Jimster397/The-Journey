@@ -41,6 +41,7 @@ Review.create(
     review: "Make sure you start at the top of the trail, cause no one wants to hike uphill."
 )
 Review.create(
+    
     hike_id: Hike.all.sample.id,
     user_id: User.all.sample.id,
     review: "Be careful on our hike we saw a bobcat."

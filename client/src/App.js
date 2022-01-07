@@ -64,10 +64,10 @@ function App() {
          
             </Route>
             <Route exact path = '/reviews'>
-              <ReviewPage  setUser={setUser} user = {user} otherUser = {otherUser} reviews={reviews}/>
+              <ReviewPage setUser={setUser} user={user} otherUser={otherUser} reviews={reviews}/>
               </Route>
               <Route exact path = '/hikes'>
-              <HikePage setUser={setUser} user = {user} otherUser = {otherUser} hikes={hikes}/>
+              <HikePage setUser={setUser} user={user} otherUser={otherUser} hikes={hikes} setHikes={setHikes} setReviews={setReviews}/>
               
              
 

@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import './index.css';
+
 
 function NavBar({ setUser }) {
     function handleLogoutClick() {
@@ -13,8 +15,8 @@ function NavBar({ setUser }) {
     }
 
     return (
-        <nav>
-            <NavLink to = "/reviews">
+        <nav className= "navbar">
+            <NavLink to = "/reviews" >
               ReviewPage
             </NavLink>
 

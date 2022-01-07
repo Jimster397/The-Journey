@@ -1,7 +1,7 @@
 body {
     background-size: auto;
     background-image:url("https://wallpaperaccess.com/full/336156.jpg");
-    
+    color: white;
     margin-left: 150px;
     margin-right: 100px;
     padding: auto;
@@ -10,7 +10,7 @@ body {
 .card {
   background: rgb(63,94,251);
   background: radial-gradient(circle, rgb(96, 146, 121) 0%, rgb(219, 252, 70) 100%);
-  
+  color: purple;
     padding: 14px 20px;
     margin: 36px 10px 50px 50px;
     border: 5px outset #050503; ;
@@ -21,3 +21,27 @@ body {
     text-align: center;
     box-shadow: 0px 10px 15px 0px rgb(12, 11, 11);
 }
+.navbar a{
+  float: middle;
+  color: rgb(246, 238, 238);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px 0px rgb(253, 251, 251);
+  border-color:rgb(46, 209, 17);
+  background-color: rgb(156, 39, 39);
+  margin-left: 5px;
+}
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: turquoise;;
+  color: rgb(243, 233, 233);
+}
+/* Add a color to the active/current link */
+.navbar a:active {
+  /* background-color: rgb(233, 240, 239); */
+  /* color: white;
+  border-color:#c55724 ; */
+} 
